@@ -34,7 +34,7 @@ Internal load balancer is supported for both virtual machines and cloud services
 The internal load balancer configuration has to be set during the creation of the first deployment in the cloud service, as shown in the sample below.
 
 > [!IMPORTANT]
-> A prerequisite to run the steps below is to have a virtual network already created for the cloud deployment. You will need the virtual network name and subnet name to create the Internal Load Balancing.
+> A prerequisite to run the steps below is to have a virtual network already created for the cloud deployment. You will need the virtual network name and subnet name to create the Internal Load Balancing.  The IP address 168.63.129.16 is used for the Probe Health.  This IP address must be allowed with the Subnet or NIC's NSG for the target NICs.
 
 ### Step 1
 
